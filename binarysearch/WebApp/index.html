@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Binary Search Visualizer</h1>
+
+    <div>
+        <input id="arrayInput" type="text" placeholder="Enter array elements (comma-separated)">
+        <input id="targetValue" type="number" placeholder="Enter target value">
+        <button id="startSearch">Start Search</button>
+    </div>
+
+    <div id="results">
+        <h2>Original Array</h2>
+        <div id="originalArray" class="array"></div>
+
+        <h2>Sorted Array</h2>
+        <div id="sortedArray" class="array"></div>
+
+        <h2 id="resultText" style="display: none;">Element found at index <span id="index"></span></h2>
+        <h2 id="notFoundText" style="display: none;">Element not found</h2>
+
+        <p id="iterationsText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

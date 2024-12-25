@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.array {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.array div {
+    margin: 5px;
+    padding: 15px;
+    background-color: #ffcccb;
+    color: black;
+    border-radius: 5px;
+}
+
+#sortedArray div.highlight {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#originalArray div {
+    background-color: #ffcccb;
+}
+
+.highlight {
+    background-color: #4CAF50; /* Green for the target element */
+    color: white;
+}
+
+/* Red highlight class for the entire sorted array when the target is not found */
+.not-found {
+    background-color: #ff0000; /* Tomato red color */
+    color: white;
+}
