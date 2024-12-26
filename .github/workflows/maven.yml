@@ -22,11 +22,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Navigate to project directory
-      working-directory: SampleJunitTest
+    - name: Navigate to SampleJunitTest and Verify
       run: |
-        echo "Navigating to SampleJunitTest directory"
-        ls -al # List files to verify directory contents
+        cd SampleJunitTest
+        ls -al
+      shell: bash
 
     - name: Build and Test with Maven
       working-directory: SampleJunitTest
