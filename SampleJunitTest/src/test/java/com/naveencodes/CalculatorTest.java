@@ -54,4 +54,15 @@ class CalculatorTest {
         });
     }
 
+    @Test
+    void testLargeNumberAddition() {
+        assertEquals(1000000000, calculator.add(500000000, 500000000),
+                "500000000 + 500000000 should equal 1000000000");
+    }
+
+    @Test
+    void testSubtractionWithNegativeNumbers() {
+        assertEquals(-5, calculator.subtract(-2, 3), "-2 - 3 should equal -5");
+    }
+
 }
