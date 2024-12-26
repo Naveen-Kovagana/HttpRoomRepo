@@ -42,6 +42,12 @@ class CalculatorTest {
     }
 
     @Test
+    void testNegativeNumbers() {
+        assertEquals(-5, calculator.add(-2, -3));
+    }
+
+
+    @Test
     void testPerformance() {
         assertTimeout(Duration.ofMillis(10), () -> {
             calculator.add(100, 200);
